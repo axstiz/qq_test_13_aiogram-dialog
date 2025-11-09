@@ -1,11 +1,8 @@
-
-from aiogram import Bot, Dispatcher
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message
 from aiogram_dialog import Dialog, DialogManager, StartMode, Window, setup_dialogs
 from aiogram_dialog.widgets.kbd import SwitchTo, Row, Cancel
 from aiogram_dialog.widgets.text import Const, Format
-from aiogram.filters import Command
 
 
 # --- Состояния диалога ---

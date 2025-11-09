@@ -1,9 +1,7 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-# Создаём кнопку с командой /help
 help_button = KeyboardButton(text="/help")
 
-# Создаём клавиатуру с одной кнопкой
 help_reply_keyboard = ReplyKeyboardMarkup(
     keyboard=[[help_button]],
     resize_keyboard=True,  # Клавиатура подстроится под размер

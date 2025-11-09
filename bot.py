@@ -1,4 +1,4 @@
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram_dialog import setup_dialogs
 import asyncio
@@ -20,7 +20,7 @@ async def main():
     # Регистрация команды /start
     dp.message.register(linear_dialog.start_dialog, Command("start"))
     dp.message.register(cyclic_dialog.start_help_dialog, Command("help"))
-    # Запуск бота
+
     await dp.start_polling(bot)
 
 
